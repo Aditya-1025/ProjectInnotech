@@ -1,0 +1,226 @@
+  <!--doctype html-->
+  <html>
+    <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, intial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Blog Section</title>
+    <!--Stylesheet----------------------------------->
+    <!-- <link rel="stylesheet" type="text/css" href="css/style.css"/>
+     -->
+     <style>*	*{
+        margin: 0px;
+        padding: 0px;
+        font-family: poppins;
+        box-sizing: border-box;
+    }
+    ul{
+        list-style: none;
+    }
+    a{
+        text-decoration: none;
+    }
+     
+    body{
+        margin: 0px;
+        padding: 0px;
+        font-family: poppins;
+        background-color: rgb(153, 23, 165);
+        box-shadow: inset;
+        text-shadow: #0f0f0f;
+    }
+     
+    /*--blog--------------------------*/
+    #blog{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 40px;
+        border-top: 1px solid rgba(0, 0, 0, 0.05);
+        border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+    }
+    .blog-heading{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+     
+    }
+    .blog-heading span h1{
+        text-decoration: underline;
+        font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        color: rgb(47, 23, 92) 100, 177);
+    
+    }
+    .blog-heading h3{
+        font-size: 2.4rem;
+        color: #2b2b2b;
+        font-weight: 600;
+    }
+    .blog-container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 20px 0px;
+        flex-wrap: wrap;
+    }
+     
+    .blog-box{
+        width:350px;
+        background-color: #ffffff;
+        border: 1px solid #ececec;
+        margin: 20px 20px;
+     
+    }
+    .blog-img{
+        width:100%;
+        height: auto;
+    }
+    .blog-img img{
+        width:100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+    }
+    .blog-text{
+        padding: 30px;
+        display: flex;
+        flex-direction: column;
+    }
+    .blog-text span{
+        color: #f33c3c;
+        font-size: 0.9rem;
+    }
+    .blog-text .blog-title{
+        font-size: 1.3rem;
+        font-weight: 500;
+        color: #272727;
+    }
+    .blog-text p{
+        color: #9b9b9b;
+        font-size: 0.9rem;
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        margin: 20px 0px;
+    }
+    .blog-text a{
+        color: #0f0f0f;
+    }
+    .blog-text a:hover{
+        color: #c74242;
+        transition: all ease 0.3s;
+    }
+     
+     
+    @media(max-width:1250px){
+     
+        .blog-box{
+            width: 300px;
+        }
+    } 
+    @media(max-width:1100px){
+        .blog-box{
+            width:70%;
+        }
+    }
+     
+    @media(max-width:550px){
+       
+        .blog-box{
+            margin: 20px 10px;
+            width: 100%;
+        }
+        #blog{
+            padding:20px;
+        }
+    }
+     </style>
+    <!--fav-icon------------------------------------->
+    <link rel="shortcut icon" href="building India-logos.jpeg"/>
+
+    <!--poppins-font-family-------------------------->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <!--blog-section============================================================================-->
+        <section id="blog">
+            <!--blog-heading--------------->
+            <div class="blog-heading">
+              <span><h1>Problems that are being faced by new or middle class Investors</h1></span>
+              <h3></h3>
+            </div>
+      
+      
+            <!--container---------------->
+            <div class="blog-container">
+      
+              <!--box-1------------->
+              <div class="blog-box">
+      
+                <!--img---->
+                <div class="blog-img">
+                  <img alt="blog" src="AdobeStock_272609078_Preview.jpeg">
+                </div>
+                <!--text--->
+                <div class="blog-text">
+                  <span><h1>Stock market</h1></span>
+                  <a href="#" class="blog-title"></a>
+                  <p>Fixed deposit takes too much times for good returns and offers low interest rates and withdrawing money before completion of time period lead to zero profit</p>
+                  <a href="#">Read More</a>
+                </div>
+      
+              </div>
+      
+      
+      
+      
+              <!--box-2------------->
+              <div class="blog-box">
+      
+                <!--img---->
+                <div class="blog-img">
+                  <img alt="blog" src="real state logo.jpg">
+                </div>
+                <!--text--->
+                <div class="blog-text">
+                  <span><h1>Real estate</h1></span>
+                  <a href="#" class="blog-title"></a>
+                  <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate facilis modi veritatis adipisci omnis perferendis deleniti tempore quasi? Explicabo recusandae soluta vel cum perspiciatis consequuntur dolorum distinctio minima voluptate quae?</p> -->
+                  <p>In terms of Property as an investment are not really good investment because it contains heavy Brokrage and Tax charges and apart from all that it takes too long time for increment in a property Rates</p>
+                  <a href="#">Read More</a>
+                </div>
+      
+              </div>
+      
+      
+      
+      
+              <!--box-3------------->
+              <div class="blog-box">
+      
+                <!--img---->
+                <div class="blog-img">
+                  <img alt="blog" src="Gold-Bar-For-Jewellery.png">
+                </div>
+                <!--text--->
+                <div class="blog-text">
+                  <span><h1>Jewellery</h1></span>
+                  <p>Jewellery contains lots of making charges with no interest as an investment and apart from that very risky and difficult to handle safely.</p>
+                  <a href="#" class="blog-title">
+                  <a href="#">Read More</a>
+                </div>
+      
+              </div>
+      
+            </div>
+      
+        </section>
+          
+    </body>
+    </html>
+      

@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+  min-width: 800px;
+  background: #ff00cc;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #333399, #ff00cc);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #333399, #ff00cc); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  margin:0px;
+}
+
+
+#trapezoid {
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 0;
+  border: 80px solid rgba(0,0,0,0);
+  border-top: 0 solid;
+  border-bottom: 100px solid rgba(1, 1, 1, .4);
+  -webkit-border-radius: 20px 20px 0 0;
+  border-radius: 20px 20px 0 0;
+  font: normal 100%/normal Arial, Helvetica, sans-serif;
+  color: rgba(0,0,0,0.7);
+  -o-text-overflow: clip;
+  text-overflow: clip;
+  -webkit-transform: rotateX(180deg);
+  transform: rotateX(180deg);
+  margin-top:-53px;
+  width: 700px;
+  position: relative;
+  transition: all 0.7s ease;
+  padding-left:7%;
+}
+
+#trapezoid a, .subnavbtn {
+ -webkit-transform: rotateX(180deg);
+  transform: rotateX(180deg);
+}
+
+.sub-home {
+  display: none;
+  position: absolute;
+  right: 0;
+  left: 0; 
+
+  z-index: 1;   
+  transform: perspective(-10px);
+}
+
+#trapezoid:hover .sub-home {
+  justify-content: center;
+  margin-top: 53px;
+}
+
+.navbar {
+  position: sticky;
+  top: 0;
+  display:flex;
+  overflow:hidden;
+  justify-content: center;
+  height: 100px;
+}
+
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 25px;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  transition: all 0.5s ease;
+}
+
+.subnav {
+  float: left;
+  overflow: hidden;
+}
+
+.subnav .subnavbtn {
+  font-size: 16px; 
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 25px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  transition: all 0.5s ease;
+}
+
+.navbar a:hover, .subnav:hover .subnavbtn {
+  background:#8CA6DB;
+  color: black;
+  border-radius:5px;
+}
+
+.subnav-content {
+  display: none;
+  position: absolute;
+  left: 0;
+  width: 100%;
+  z-index: 1;   
+  transform: perspective(-10px);
+}
+
+.subnav-content a {
+  float: left;
+  color: white;
+  text-decoration: none; 
+}
+
+.subnav-content a:hover {
+  background:#B993D6;
+  color: black;
+}
+
+.subnav:hover .subnav-content {
+  display: flex;
+  justify-content: center;
+}
+
+
+section  {
+  margin:0em 10em 10em 10em;
+  padding:3em 10em 3em 10em;
+}
+
+h1{
+  color: #111; 
+  font-family: 'Helvetica Neue', sans-serif; 
+  font-size: 200px; 
+  font-weight: bold; 
+  letter-spacing: -1px; 
+  text-align: center;
+  padding: 0;
+  margin: 0;
+}
+
+p {
+  color: #111; 
+  font-family: 'Calibri', sans-serif; 
+  font-size: 25px; 
+  line-height: 1.5;
+}
+
+hr {
+  background-color: #000;
+}
+    </style>
+ 
+</head>
+<body>
+    <h1>Welcome to this Website</h1>
+    <div id="firstContainer" class="container">
+    <button id="Click">Click me</button>
+</div>
+<div class="coontainer">
+    <p>This is a paragraph</p>
+    
+</div>
+
+</body>
+<script>
+console.log("Hello world");
+console.log("hello world",4+6,"another log");
+
+//variables in js
+//what are containers? containers to store data value
+
+var number1=34;
+var number2=45;
+
+console.log(number1+number2);
+//string
+var str1="This is a string";
+var str2="this is also a string";
+
+
+//object
+var marks={
+    amratansh:34,
+    rahul:45,
+    stuti:88 
+}
+console.log(marks);
+var a=true;
+var b=false;
+
+console.log(a,b);
+
+var n=null;
+console.log(n);
+
+// at a very high level there are two types of data types in javascript
+// 1.primitve data type:undefined ,Null,number,string,boolean symbol
+// 2.reference data type; arrays ,objects
+
+var arr=[1,2,4,"string",6];
+console.log(arr);
+
+//operators in js
+
+var a=88;
+var b=55;
+
+console.log("the value of a+b",a+b);
+console.log("the value of a*b",a*b);
+console.log("the value of a/b",a/b);
+console.log("the value of a-b",a-b);
+
+//assignment operator
+var c=b;
+console.log(c);
+c=c+2;
+console.log(c);
+
+//logical operator
+//logical and==== sab true ho ya sb false ho
+console.log(true||false);
+//dono me se ek ho jaye
+
+// logical not
+//sach ko jhoot or jhoot ko sach krde
+console.log(!false);
+
+console.log(!true);
+//functions in js
+
+function avg(a,b){
+   
+    c=(a+b)/2;
+    return c;
+}
+c1=avg(4,6)
+c2=avg(14,16)
+console.log(c1,c2);
+
+// conditionals in javscript
+var age=7;
+//if-else statement
+if(age>8){
+    console.log("eligible");
+}
+else{
+    console.log("not eligible");
+}
+// if-else ladder
+if(age>=32)
+{
+    console.log("you are not a kid ")
+}
+else if(age>32)
+{
+    console.log("bacche ni rhe")
+
+}
+else if(age<18){
+    console.log("bacche ni rhe");
+}
+else
+{
+    console.log("bacche rhe");
+}
+var arr=[1,2,3,4,5];
+console.log(arr);
+
+for(var i=0;i<arr.length;i++)
+{
+    console.log(arr[i]);
+}
+let j=0;
+while(j<arr.length){
+    console.log(arr[j]);
+j++;
+}
+do{
+    console.log(arr[j]);
+    j++;
+}while(j<arr.length);
+
+let myArr=["aditya","harsh",87,true];
+console.log(myArr.length);
+myArr.pop();//last element will be deleted
+myArr.push("aditya");
+console.log(myArr)
+
+let mystrings="aditya is a good guy";
+console.log(mystrings.length);
+// console.log(mystrings.indexOf(good));
+// console.log(mystrings.lastIndexOf(good));
+
+let mydate=new Date();
+console.log(mydate);
+console.log(mydate.getTime());
+
+
+
+</script>
+</html>
+
+
+
